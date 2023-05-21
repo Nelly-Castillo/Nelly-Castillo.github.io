@@ -1,10 +1,14 @@
+*{
+  text-decoration: none;
+}
 /* Barra de navegacion */
 
 .navbar {
   padding-left: 2rem;
   padding-right: 2rem;
   padding-bottom: 2rem;
-  background-color: #f5f6f7;
+  padding-top: 1.5rem;
+  background-color: #EEF5F1;
 }
 
 .navbar-collapse {
@@ -12,18 +16,48 @@
   justify-content: space-between;  
 }
 
+.nav-link{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 20px;
+  border: 5px;
+}
+.nav-link:hover{
+background-color: #387357;
+border-radius: 20px;
+color: #F2E9CE;
+}
+
 /* Estilos generales */
 
+body{
+  font-family: 'Dosis', sans-serif;
+
+}
 section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #EEF5F1;
 }
 
 h1 {
   font-size: 2.5rem;
-  font-family: 'Rubik Dirt', cursive;
+  color: #04261A;
+  font-family: 'Permanent Marker', cursive;
+}
+h2{
+   font-family: 'Permanent Marker';
+ }
+h4{
+  font-family: 'Boogaloo';
+}
+li{
+  color: #A78747;
+}
+a{
+  color: #A78747;
 }
 
 .seccion-oscura {
@@ -33,13 +67,12 @@ h1 {
 
 .seccion-clara {
   color: black;
-  background-color: white;
+  background-color: #EEF5F1;
 }
 
 .seccion-titulo {
   font-size: 2rem;
   padding: 15px 0;
-  font-family: 'Rubik Dirt', cursive;
 }
 
 .seccion-descripcion {
@@ -51,9 +84,19 @@ h1 {
   font-size: 1.2rem;
 }
 
-.btn-info {
+
+.btn-inf{
+  color: #EEF5F1;
+  background-color: #15523F;
   font-size: 1.1rem;
   margin: 20px;
+  border: 10px solid #15523F;
+  border-radius: 15px;
+}
+.btn-inf:hover{
+  background-color: #A78747;
+  color: #F2E9CE;
+  border: 10px solid #A78747;
 }
 
 .texto-negro {
@@ -64,16 +107,17 @@ h1 {
   color: white;
 }
 
+
 /* Seccion Hero */
 
 .hero {
-  background-color: #f5f6f7;
+  background-color: #EEF5F1;
   min-height: 450px;
   text-align: center;
 }
 
 .hero-principal {
-  padding-top: 0px;
+  padding-top: 1.5px;
   padding-left: 3rem;
   padding-right: 3rem;
   padding-bottom: 2rem;
@@ -82,12 +126,16 @@ h1 {
 .hero-imagen-desarrollador {
   width: 200px;
   height: 200px;
-  margin: 20px;
+  margin: 60px;
 }
 
 .hero-principal h2 {
   font-size: 1.5rem;
   color: #615151;
+}
+
+.text.ani{
+  color:#A68549;
 }
 
 /* Sobre mi */
@@ -142,9 +190,14 @@ h1 {
   font-weight: bold;
   margin: 10px 0;
 }
+.badge {
+  color: white;
+  background-color: #A68549;
+}
 
 .badge {
   margin: 5px;
+
 }
 
 /* Proyectos */
@@ -175,6 +228,7 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  font-family: 'Covered By Your Grace', cursive;
 }
 
 .overlay p {
@@ -204,7 +258,12 @@ h1 {
   font-size: 60px;
   margin: 10px;
 }
-
+.li{
+  color: #A78747;
+}
+.li:hover{
+  color: #A78747;
+}
 /* Articulos */
 
 .articulos {
@@ -255,7 +314,6 @@ h1 {
   max-width: 70%;
   font-size: 20px;
   text-align: center;
-  font-family: 'Share Tech Mono', monospace;
 }
 
 .testimonio-info {
@@ -314,7 +372,8 @@ h1 {
 }
 
 .contacto button:hover {
-  background-color: white;
+  background-color: #405853;
+  border: 2px solid #405853;
   color: black;
 }
 
@@ -344,7 +403,6 @@ footer {
   font-size: 1.5rem;
   padding: 20px;
   margin-bottom: 30px;
-  font-family: 'Quicksand', sans-serif;
 }
 
 .iconos-redes-sociales a {
@@ -367,12 +425,12 @@ footer {
 }
 
 .iconos-redes-sociales a:hover {
-  background-color: white;
-  border: 2px solid #16513F;
+  background-color: #BB9C59;
+  border: 2px solid #BB9C59;
 }
 
 .iconos-redes-sociales a:hover i {
-  color: black;
+  color: white;
 }
 
 .derechos-de-autor {
@@ -381,6 +439,7 @@ footer {
   padding: 20px;
 }
 
+  
 /* Adaptable (Responsivo) */
 
 @media screen and (max-width: 400px) {
